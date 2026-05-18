@@ -1,0 +1,20 @@
+@page
+@model ProductManagementRazorPages.Pages.Products.IndexModel
+@{
+    ViewData["Title"] = "Products";
+}
+<h1>Products</h1>
+<p>Welcome @ViewData["Username"]</p>
+<p><a asp-page="Create" class="btn btn-primary">Create New</a></p>
+<table class="table table-striped">
+<thead><tr><th>Name</th><th>Stock</th><th>Price</th><th>Category</th><th></th></tr></thead>
+<tbody>
+@foreach (var item in Model.Product)
+{
+    <tr>
+        <td>@item.ProductName</td><td>@item.UnitsInStock</td><td>@item.UnitPrice.ToString("C")</td><td>@item.Category?.CategoryName</td>
+        <td><a asp-page="Edit" asp-route-id="@item.ProductId">Edit</a> | <a asp-page="Details" asp-route-id="@item.ProductId">Details</a> | <a asp-page="Delete" asp-route-id="@item.ProductId">Delete</a></td>
+    </tr>
+}
+</tbody>
+</table>
