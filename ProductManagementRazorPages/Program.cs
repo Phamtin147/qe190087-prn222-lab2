@@ -39,10 +39,10 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
 app.UseRouting();
 app.UseSession();
 app.UseAuthorization();
-app.MapStaticAssets();
 app.MapHub<SignalRServer>("/signalRServer");
-app.MapRazorPages().WithStaticAssets();
+app.MapRazorPages();
 app.Run();

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "K6O2zaLEpZU=",
+  "dgSpecHash": "D83GuB2uVOc=",
   "success": true,
   "projectFilePath": "/home/amtia/Documents/prn222/PRN222/Labs/Lab02_ProductManagementRazorPages/BusinessObjects/BusinessObjects.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/amtia/.nuget/packages/microsoft.netcore.app.ref/8.0.26/microsoft.netcore.app.ref.8.0.26.nupkg.sha512",
+    "/home/amtia/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.26/microsoft.aspnetcore.app.ref.8.0.26.nupkg.sha512"
+  ],
   "logs": []
 }
